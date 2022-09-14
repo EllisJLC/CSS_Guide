@@ -1,0 +1,100 @@
+* {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    padding-top: 40px;
+}
+
+:root {
+    --gen-font: Arial, Helvetica, sans-serif;
+    --gen-colour: rgb(136, 23, 136);
+    --section-colour: aliceblue;
+    --code-colour: rgb(117, 60, 117);
+    --highlight: rgb(112, 35, 53);
+}
+
+header, footer {
+    background-color: grey;
+}
+
+section p {
+    color: var(--gen-colour);
+    font-family: var(--gen-font);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    width: 85%;
+    margin: 0 auto;
+}
+
+section .code{
+    color: var(--section-colour);
+    background-color: var(--code-colour);
+    border-radius: 5px;
+}
+
+::selection {
+    background-color: var(--highlight);
+    color: var(--section-colour);
+}
+
+.code:active {
+    user-select: all;
+}
+
+blockquote {
+    color: var(--section-colour);
+    background-color: var(--code-colour);
+    padding-left: 20px;
+}
+
+#top-p {
+    font-family: var(--gen-font);
+    color:var(--section-colour);
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.cards {
+    border-style: dotted;
+    border-color: var(--section-colour);
+    max-width: 300px;
+    margin: 15px;
+    padding: 10px;
+}
+
+section h1 {
+    border-style: solid;
+    border-color: var(--section-colour);
+    color: var(--gen-colour);
+    padding-bottom: 10px;
+    padding-top: 10px;
+    position: relative;
+    margin-top: -30px;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    font-family: var(--gen-font);
+    color: var(--gen-colour);
+
+}
+
+h2 {
+    text-align: center;
+    font-family: var(--gen-font);
+    color: var(--code-colour);
+}
